@@ -1,0 +1,12 @@
+<!--pages/singleTemplate/index.wxml-->
+<view class="page">
+  <view class="title">功能介绍</view>
+  <view class="info">云开发针对小程序中常见的页面，如抽奖、邀请函、用户中心等内嵌页面，提供了一套业务模板+定制修改工具。</view>
+  <image class="img" mode="widthFix" lazy-load="true"  src="../../images/single_template_sample.png"></image>
+  <view class="info">您可以使用云模板快速搭建各类场景的小程序页面，例如抽奖、签到、邀请函、领红包等等。云模板支持通过可视化编辑工具，自定义页面内容和样式，实现个性化定制。</view>
+  <image class="img" mode="widthFix" lazy-load="true"  src="../../images/single_template_info.png"></image>
+  <view class="title">如何使用</view>
+  <view class="info">在资源管理器内找到pages文件夹，右键单击后选择「使用云模板或AI配置页面」或「配置单页模板」。</view>
+  <image class="img" mode="widthFix" lazy-load="true"  src="../../images/single_template.png"></image>
+	<view class="info">💡PS：如果您找不到此选项，请将微信开发者工具更新至最新Nightly版本。</view>
+</view>
