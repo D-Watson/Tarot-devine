@@ -1,1 +1,7 @@
-/* pages/index/index.wxss */
+.setting-page{
+  width:100%;
+  background-size: cover;
+  background-image: url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/back_1.jpg?sign=13db000b097d674d7447e275a33a04fd&t=1710867924");
+  background-repeat:no-repeat; 
+  position: absolute;
+}

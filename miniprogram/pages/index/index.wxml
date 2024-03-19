@@ -1,2 +1,5 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="setting-page"  style="height: {{screenHeight}}px;">
+  <view class="scroll-view">
+    <view wx:for="{{textLines}}" wx:key="index" class="text-line">{{item}}</view>
+  </view>
+</view>
