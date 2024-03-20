@@ -1,18 +1,26 @@
 // pages/index/index.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     screenHeight : 0,
-    
+    userQuestion:'',
+    questions:[
+      "我和他接下来感情发展如何？",
+      "我们近期能复合么？",
+      "他对我们的关系是怎么想的？",
+      "我最近财运怎么样？",
+      "我接下来的工作进展如何？",
+      "今天我要表白吗？"
+    ]
   },
   
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    console.log(this.userQuestion)
     this.getSystemHeight();
   },
   getSystemHeight: function(){
@@ -25,7 +33,12 @@ Page({
       }
     });
   },
-
+  getUserQuestion:function(e){
+    var index = parseInt(e.currentTarget.dataset.index);
+    this.setData({
+      userQuestion: this.data.questions[index]
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

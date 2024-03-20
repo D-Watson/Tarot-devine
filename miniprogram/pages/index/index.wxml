@@ -1,6 +1,10 @@
 <view class="setting-page"  style="height: {{screenHeight}}px;">
   <view class="question-view">
-    <input class="leather-volume" placeholder="请输入你心中所想……"/>
+    <textarea maxlength="50" class="leather-volume" placeholder="请输入你心中所想……" value="{{userQuestion}}"></textarea>
+    <view class="glowing-button">点我解答</view>
   </view>
-  <button class="glowing-button">点我解答</button>
+  <view>你可能想问</view>
+  <view class="question-list" wx:for="{{ questions }}" wx:key="index" bindtap="getUserQuestion" data-index="{{index}}">
+    <view class="question-btn" >{{ item }}</view>
+  </view>
 </view>
