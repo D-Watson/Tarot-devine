@@ -6,10 +6,6 @@ Page({
    */
   data: {
     screenHeight : 0,
-    textLines: ["第一行文本", "第二行文本", "第三行文本", "第四行文本", "第五行文本"],
-    animation: null,
-    animationDuration: 500, // 滚动一个文本所需的时间（单位：毫秒）
-    animationInterval: 500, // 两次滚动之间的间隔时间（单位：毫秒）
   },
   
   /**
@@ -17,8 +13,6 @@ Page({
    */
   onLoad(options) {
     this.getSystemHeight();
-    this.startScrollAnimation();
-   
   },
   getSystemHeight: function(){
     wx.getSystemInfo({
@@ -29,31 +23,6 @@ Page({
         });
       }
     });
-  },
-  startScrollAnimation: function() {
-    var that = this;
-    var textLines = this.data.textLines;
-    var animation = wx.createAnimation({
-      duration: that.data.animationDuration,
-      timingFunction: 'linear'
-    });
-
-    // 动画从上往下滚动
-    animation.translateY(-textLines.length * 20).step();
-    that.setData({
-      animation: animation.export()
-    });
-
-    // 延迟指定的间隔时间后，重置动画并再次滚动
-    setTimeout(function() {
-      animation.translateY(0).step({ duration: 0 });
-      that.setData({
-        animation: animation.export()
-      });
-      setTimeout(function() {
-        that.startScrollAnimation();
-      }, that.data.animationInterval);
-    }, that.data.animationDuration);
   },
 
   /**

@@ -1,5 +1,6 @@
 <view class="setting-page"  style="height: {{screenHeight}}px;">
-  <view class="scroll-view">
-    <view wx:for="{{textLines}}" wx:key="index" class="text-line">{{item}}</view>
+  <view class="question-view">
+    <input class="leather-volume" placeholder="请输入你心中所想……"/>
   </view>
+  
 </view>
