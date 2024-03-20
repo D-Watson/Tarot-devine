@@ -6,6 +6,7 @@ Page({
    */
   data: {
     screenHeight : 0,
+    
   },
   
   /**

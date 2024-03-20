@@ -37,3 +37,20 @@
   border-radius: 8px; /* 圆角 */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset; /* 内阴影作为装饰线 */
 }
+
+.glowing-button {
+  margin-top: 30rpx;
+  height: 100rpx;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 37rpx;
+  transition: 0.5s;
+  cursor: pointer;
+}
+ 
+.glowing-button:hover {
+  box-shadow: 0 0 20rpx #a18cd1;
+  filter: brightness(1.2); /* 提高亮度 */
+}

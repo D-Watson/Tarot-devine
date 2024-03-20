@@ -2,5 +2,5 @@
   <view class="question-view">
     <input class="leather-volume" placeholder="请输入你心中所想……"/>
   </view>
-  
+  <button class="glowing-button">点我解答</button>
 </view>
