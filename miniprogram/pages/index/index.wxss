@@ -1,9 +1,12 @@
 .setting-page{
   width:100%;
   background-size: cover;
-  background-image: url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/back_1.jpg?sign=13db000b097d674d7447e275a33a04fd&t=1710867924");
+  background-image: url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/txrpic-11009835.gif?sign=407974077d14f5e08b35e754ac4d1663&t=1711000461");
   background-repeat:no-repeat; 
   position: absolute;
+}
+.question-block{
+  margin-top: 20rpx;
 }
 .question-view{
   margin-top: 50rpx;
@@ -71,7 +74,7 @@
 .question-btn{
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   width: 600rpx;
-  margin: 10rpx;
+  margin: 15rpx;
   height: 75rpx;
   display: flex;
   align-items: center;
@@ -80,4 +83,10 @@
   color: white;
   font-size: 30rpx;
   cursor: pointer;
+}
+.title{
+  margin-left: 30rpx;
+  margin-bottom: 15rpx;
+  color: #f6d365;
+  -webkit-text-stroke: 1px #f6d365;
 }

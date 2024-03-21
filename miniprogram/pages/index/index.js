@@ -39,6 +39,11 @@ Page({
       userQuestion: this.data.questions[index]
     })
   },
+  answerQuestion:function(){
+    wx.navigateTo({
+      url: '/pages/devine/devine',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

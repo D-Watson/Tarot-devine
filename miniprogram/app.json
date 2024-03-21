@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/customize/customize",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/devine/devine"
   ],
   "window": {
     "backgroundColor": "#fbc2eb",
