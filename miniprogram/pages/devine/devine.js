@@ -6,8 +6,25 @@ Page({
    */
   data: {
     cardStyles: [],
-    
   },
+
+  handleDivClick:function(e){
+    const idx = e.currentTarget.dataset.idx
+    const cardStyles = this.data.cardStyles
+    cardStyles[idx] = {
+      width: '150rpx',
+      height: '300rpx',
+      'margin-left': '-115rpx',
+      'background-image': 'url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/taro.png?sign=ed773529996b850108477026ec993f61&t=1711380518")',
+      'background-size': `cover`,
+      'background-position': `center`,
+      'animation': `moveTop 5s steps(60, end) forwards`,
+    };
+    this.setData({
+      cardStyles: cardStyles
+    });
+  },
+
   getCardStyle:function(index){
     const rotationAngle = (index-5)*3.6; // 递增角度
     const style = {

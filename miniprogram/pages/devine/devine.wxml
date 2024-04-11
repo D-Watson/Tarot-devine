@@ -1,9 +1,6 @@
 <view class="setting-page">
-  <view class="pick-row">
-    
-  </view>
   <view class="card-row">
-    <view wx:for="{{cardStyles}}"  wx:key="index" style="{{cardStyles[index]}}"></view>
+    <view wx:for="{{cardStyles}}"  wx:key="index" style="{{cardStyles[index]}}" data-idx="{{index}}" bindtap="handleDivClick"></view>
   </view>
 </view>
 
