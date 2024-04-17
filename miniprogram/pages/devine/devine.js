@@ -7,18 +7,43 @@ Page({
   data: {
     cardStyles: [],
     move: [],
+    haveOnePick: false,
+    pickedIdx: -1,
   },
 
-  handleDivClick:function(e){
-    const idx = e.currentTarget.dataset.idx;
+  //翻转牌面
+  rotateCard:function(e){
+    console.log("000000")
     let m = wx.createAnimation({duration: 200});
-    m.translateY(-300).step();
-    m.translateX(0).step();
+    m.rotateY(180).step();
     var moving = this.data.move
     moving[idx] = m.export();
     this.setData({
-      move: moving
+      move: moving,
     })
+  },
+
+  handleDivClick:function(e){
+    if(this.data.haveOnePick){
+      return 
+    }
+    const idx = e.currentTarget.dataset.idx;
+    var left = 0
+    var query = wx.createSelectorQuery().selectAll('.card-'+idx).boundingClientRect(function (rect) {
+      left = rect[0].left
+    }).exec((res) => {
+      let m = wx.createAnimation({duration: 200});
+      m.translateY(-400).step();
+      m.translateX(270 / 750 * wx.getSystemInfoSync().windowWidth - left).step();
+      var moving = this.data.move
+      moving[idx] = m.export();
+      this.setData({
+        move: moving,
+        haveOnePick: true,
+        pickedIdx: idx,
+      })
+    })
+    
   },
 
   getCardStyle:function(index){
@@ -50,7 +75,8 @@ Page({
     }
     this.setData({
       cardStyles: items,
-      move: moves
+      move: moves,
+      haveOnePick: false,
     });
   },
 
