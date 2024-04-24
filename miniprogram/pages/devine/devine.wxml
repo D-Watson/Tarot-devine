@@ -1,10 +1,6 @@
 <view class="setting-page">
-  <view wx:if="{{haveOnePick}}" class="{{'card-'+pickedIdx}}"
-  bindtap="rotateCard">
-    
-  </view>
   <view class="card-row">
-    <view wx:for="{{cardStyles}}"  wx:key="index" class="{{'card-'+index}}" style="{{cardStyles[index]}}" data-idx="{{index}}" animation="{{move[index]}}" bindtap="handleDivClick"></view>
+    <view wx:for="{{cardStyles}}"  wx:key="index" class="{{'card-'+index}}" style="{{cardStyles[index]}}" data-idx="{{index}}" animation="{{move[index]}}" bindtap="handelClicks"></view>
   </view>
 </view>
 
