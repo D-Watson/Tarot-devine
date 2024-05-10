@@ -24,3 +24,27 @@
     top: 0%;
   }
 }
+.before{
+  width: 150rpx;
+  height: 300rpx;
+  margin-top: 120rpx;
+  background-color: black;
+}
+.now{
+  width: 150rpx;
+  height: 300rpx;
+  margin-top: 80rpx;
+  background-color: black;
+}
+.future{
+  width: 150rpx;
+  height: 300rpx;
+  margin-top: 120rpx;
+  background-color: black;
+}
+.picked-cards{
+  display: flex;
+  margin: 0 40rpx;
+  justify-content: space-between;
+
+}

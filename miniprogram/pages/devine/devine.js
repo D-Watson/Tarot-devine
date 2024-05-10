@@ -12,50 +12,10 @@ Page({
     firstClick: [],
   },
 
-  //翻转牌面
-  rotateCard:function(id){
-    console.log("00000")
-    var firstClickArr = this.data.firstClick
-    var top, left, right = 0
-    var styleArr = this.data.cardStyles
-    var query = wx.createSelectorQuery().selectAll('.card-'+id).boundingClientRect(function (rect) {
-      top = rect[0].top
-      left = rect[0].left
-      right = rect[0].right
-      console.log(left)
-    }).exec((res) => {
-      const style = {
-        width: '150rpx',
-        height: '300rpx',
-        'background-image': 'url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/taro.png?sign=ed773529996b850108477026ec993f61&t=1711380518")',
-        'background-size': `cover`,
-        'background-position': `center`,
-        'position': `absolute`,
-        'top': top,
-        'left': left,
-        'right': right
-      };
-      styleArr[id] = Object.keys(style).map(key => `${key}: ${style[key]};`).join(' ')
-      let m = wx.createAnimation({duration: 200});
-      m.rotateY(180).step();
-      var moving = this.data.move
-      moving[id] = m.export();
-      console.log(moving[id])
-      this.setData({
-        move: moving,
-        cardStyles: styleArr
-      })
-    })
-  },
-
   handelClicks:function(e){
     const idx = e.currentTarget.dataset.idx;
     console.log(this.data.firstClick[idx])
-    if(this.data.firstClick[idx] === 0){
-      this.handleDivClick(idx) 
-    }else{
-      this.rotateCard(idx)
-    }
+    this.handleDivClick(idx) 
   },
 
   handleDivClick: function(id) {
@@ -64,7 +24,6 @@ Page({
     }
     var that = this; // 保存当前上下文
     var query = wx.createSelectorQuery();
-    
     query.selectAll('.card-' + id).boundingClientRect((rect) => {
       var left = rect[0].left;
       let m = wx.createAnimation({ duration: 200 });
@@ -119,6 +78,31 @@ Page({
       haveOnePick: false,
       firstClick: firstClick,
     });
+  },
+  devine:function(){
+    const question = "圣杯10，我与他能否复合"
+    //获取
+    wx.request({
+      url: 'https://api.moonshot.cn/v1/chat/completions', 
+      data: {
+        "model": "moonshot-v1-8k",
+        "messages": [
+            {
+                "role": "system",
+                "content": "你要扮演塔罗牌占卜师，不许出现塔罗牌没有科学依据这样的解释，请根据每张牌含义，要让用户信服你的说辞和分析。"
+            },
+            { "role": "user", "content": question }
+        ],
+        "temperature": 0.3
+    },
+      header: {
+        'content-type': 'application/json',
+        "authorization":"bearer"+"sk-FAUulmfXZSTOzem6R15DG4F8fXzcz0lOjcTLzNlEI6YSB20L"
+      },
+      success (res) {
+        console.log(res.data)
+      }
+    })
   },
 
   /**
