@@ -28,23 +28,53 @@
   width: 150rpx;
   height: 300rpx;
   margin-top: 120rpx;
-  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .now{
   width: 150rpx;
   height: 300rpx;
   margin-top: 80rpx;
-  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .future{
   width: 150rpx;
   height: 300rpx;
   margin-top: 120rpx;
-  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .picked-cards{
   display: flex;
   margin: 0 40rpx;
   justify-content: space-between;
 
+}
+.glowing-button {
+  margin-top: 25rpx;
+  width: 75vw;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 10px;
+  color: white;
+  font-size: 37rpx;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-left: 12vw;
+  margin-top: 100rpx;
+}
+ 
+.glowing-button:hover {
+  box-shadow: 0 0 20rpx #a18cd1;
+  filter: brightness(1.2); /* 提高亮度 */
 }

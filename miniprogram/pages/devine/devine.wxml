@@ -1,11 +1,16 @@
 <view class="setting-page">
   <view class="picked-cards">
-    <view class="before"></view>
-    <view class="now">
-      
+    <view class="before">
+      <p>过去</p>
     </view>
-    <view class="future"></view>
+    <view class="now">
+      <p>现在</p>
+    </view>
+    <view class="future">
+      <p>将来</p>
+    </view>
   </view>
+  <view class="glowing-button" bindtap="answerQuestion">点我翻牌</view>
   <view class="card-row">
     <view wx:for="{{cardStyles}}"  wx:key="index" class="{{'card-'+index}}" style="{{cardStyles[index]}}" data-idx="{{index}}" animation="{{move[index]}}" bindtap="handelClicks"></view>
   </view>

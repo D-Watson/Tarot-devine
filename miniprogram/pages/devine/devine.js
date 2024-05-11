@@ -7,9 +7,10 @@ Page({
   data: {
     cardStyles: [],
     move: [],
-    haveOnePick: false,
-    pickedIdx: -1,
-    firstClick: [],
+    pickedIdx: [],
+    beforePosition: {},
+    nowPosition: {},
+    futurePosition: {},
   },
 
   handelClicks:function(e){
@@ -19,30 +20,65 @@ Page({
   },
 
   handleDivClick: function(id) {
-    if (this.data.haveOnePick) {
+    var len = this.data.pickedIdx.length;
+    if (len === 3) {
       return;
+    }
+    var position = {};
+    switch(len){
+      case 0:
+        position = this.data.beforePosition;
+        break;
+      case 1:
+        position = this.data.nowPosition;
+        break;
+      case 2:
+        position = this.data.futurePosition;
+        break;
     }
     var that = this; // 保存当前上下文
     var query = wx.createSelectorQuery();
     query.selectAll('.card-' + id).boundingClientRect((rect) => {
       var left = rect[0].left;
       let m = wx.createAnimation({ duration: 200 });
-      m.translateY(-400).step();
-      m.translateX(270 / 750 * wx.getSystemInfoSync().windowWidth - left).step();
+      m.translateY(position.top - rect[0].top).step();
+      m.translateX(position.left - rect[0].left).step();
       var moving = that.data.move;
       moving[id] = m.export();
-      var firstClickArr = that.data.firstClick;
-      firstClickArr[id] = 1;
+      var pickedIdx = that.data.pickedIdx;
+      pickedIdx.push(id);
       that.setData({
         move: moving,
         haveOnePick: true,
-        pickedIdx: id,
-        firstClick: firstClickArr,
+        pickedIdx: pickedIdx,
       });
     });
     query.exec();
   },
-
+  getBeforePosition:function(){
+    var query = wx.createSelectorQuery();
+    query.selectAll(".before").boundingClientRect((rect) => {
+      this.setData({
+        beforePosition: rect[0]
+      })
+    }).exec();
+  },
+  getNowPosition:function(){
+    var query = wx.createSelectorQuery();
+    query.selectAll(".now").boundingClientRect((rect) => {
+      this.setData({
+        nowPosition: rect[0]
+      })
+    }).exec();
+  },
+  getFuturePosition:function(){
+    var query = wx.createSelectorQuery();
+    query.selectAll(".future").boundingClientRect((rect) => {
+      this.setData({
+        futurePosition: rect[0]
+      })
+    }).exec();
+  },
   getCardStyle:function(index){
     const rotationAngle = (index-5)*3.6; // 递增角度
     const style = {
@@ -61,6 +97,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getBeforePosition();
+    this.getNowPosition();
+    this.getFuturePosition();
     var items = []
     var moves = []
     var firstClick = []
