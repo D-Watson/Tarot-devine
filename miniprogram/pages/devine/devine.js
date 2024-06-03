@@ -117,6 +117,30 @@ Page({
       haveOnePick: false,
       firstClick: firstClick,
     });
+
+    //获取云存储列表
+    const storage = wx.cloud.storage();
+    storage.list({
+      fileList: [],
+      success: res => {
+        // 获取文件列表成功
+        const fileList = res.fileList;
+        console.log(res)
+        console.log(fileList)
+        // 处理文件列表，筛选出图片文件
+        const imageFiles = fileList.filter(file => file.fileType === 'image');
+        // 遍历图片文件
+        imageFiles.forEach(imageFile => {
+          // 处理每个图片文件的逻辑，如显示、处理等
+          console.log('图片文件路径：', imageFile.fileID);
+        });
+      },
+      fail: err => {
+        // 获取文件列表失败
+        console.error('获取文件列表失败：', err);
+      }
+    });
+
   },
   devine:function(){
     const question = "圣杯10，我与他能否复合"
