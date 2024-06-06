@@ -85,7 +85,7 @@ Page({
       width: '150rpx',
       height: '300rpx',
       'margin-left': '-115rpx',
-      'background-image': 'url("https://6c65-lets-play-4g9llnlf4dd7edd7-1304389115.tcb.qcloud.la/taro.png?sign=ed773529996b850108477026ec993f61&t=1711380518")',
+      'background-image': 'url("https://tarot-cards.oss-rg-china-mainland.aliyuncs.com/tarot/WechatIMG5.png?Expires=1717675493&OSSAccessKeyId=TMP.3KjYSi4h11UCymhchonneh1SZBnkWBGrQF28sLpZN7Hc2uQ8oT2eKhmMXhEkTcgMCscaH5djTBoChB46S41uQrQYcN1meJ&Signature=Miq3lRCQTcAiRY4TkIMRQHz%2FiXA%3D")',
       'background-size': `cover`,
       'background-position': `center`,
       transform: `rotate(${rotationAngle}deg)`,
