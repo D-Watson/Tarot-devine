@@ -32,7 +32,7 @@
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
+    "packNpmManually": true,
     "packNpmRelationList": [],
     "minifyWXSS": true,
     "condition": false
@@ -60,6 +60,11 @@
           "id": -1,
           "name": "db guide",
           "pathName": "pages/databaseGuide/databaseGuide"
+        },
+        {
+          "id": -1,
+          "name": "devine image data",
+          "pathName": "pages/devine/image_data.json"
         }
       ]
     }
