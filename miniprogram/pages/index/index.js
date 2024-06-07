@@ -40,6 +40,7 @@ Page({
     })
   },
   answerQuestion:function(){
+    
     wx.navigateTo({
       url: '/pages/devine/devine',
     })

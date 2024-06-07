@@ -1,4 +1,5 @@
 // pages/devine/devine.js
+const fs = wx.getFileSystemManager()
 Page({
 
   /**
@@ -11,6 +12,7 @@ Page({
     beforePosition: {},
     nowPosition: {},
     futurePosition: {},
+    tarot_info: []
   },
 
   handelClicks:function(e){
@@ -85,7 +87,7 @@ Page({
       width: '150rpx',
       height: '300rpx',
       'margin-left': '-115rpx',
-      'background-image': 'url("https://tarot-cards.oss-rg-china-mainland.aliyuncs.com/tarot/WechatIMG5.png?Expires=1717675493&OSSAccessKeyId=TMP.3KjYSi4h11UCymhchonneh1SZBnkWBGrQF28sLpZN7Hc2uQ8oT2eKhmMXhEkTcgMCscaH5djTBoChB46S41uQrQYcN1meJ&Signature=Miq3lRCQTcAiRY4TkIMRQHz%2FiXA%3D")',
+      'background-image': 'url("https://tarot-cards.oss-rg-china-mainland.aliyuncs.com/tarot/WechatIMG5.png?Expires=1717768300&OSSAccessKeyId=TMP.3Khw5LnCjgKyJdEmvruyoASdVVAv2DTBrR8GfTeRfZAbGqdpFg4NQsLnm686pj1ZuHd1bg2Dteh3q5de5dcDzYA3YRB6em&Signature=h3RsUidJKnfqRoUKd%2FyaHohlIQE%3D")',
       'background-size': `cover`,
       'background-position': `center`,
       transform: `rotate(${rotationAngle}deg)`,
@@ -111,37 +113,36 @@ Page({
     for(let i=0;i<15;i++){
       moves.push(undefined)
     }
+    this.initialTarotInfo();
     this.setData({
       cardStyles: items,
       move: moves,
       haveOnePick: false,
       firstClick: firstClick,
     });
+    console.log(this.data.tarot_info);
+    console.log(this.data.tarot_info.len);
+  },
 
-    //获取云存储列表
-    const storage = wx.cloud.storage();
-    storage.list({
-      fileList: [],
+  initialTarotInfo:function(){
+    fs.readFile({
+      filePath: `/pages/devine/image_data.json`,
+      encoding: 'utf8',
       success: res => {
-        // 获取文件列表成功
-        const fileList = res.fileList;
-        console.log(res)
-        console.log(fileList)
-        // 处理文件列表，筛选出图片文件
-        const imageFiles = fileList.filter(file => file.fileType === 'image');
-        // 遍历图片文件
-        imageFiles.forEach(imageFile => {
-          // 处理每个图片文件的逻辑，如显示、处理等
-          console.log('图片文件路径：', imageFile.fileID);
-        });
+        console.log(res); // 打印 res 对象
+        const data = JSON.parse(res.data);
+        // 处理读取到的 JSON 数据
+        console.log(data);
+        this.setData({
+          tarot_info: data
+        })
       },
       fail: err => {
-        // 获取文件列表失败
-        console.error('获取文件列表失败：', err);
+        console.error('读取 JSON 文件失败:', err);
       }
     });
-
   },
+
   devine:function(){
     const question = "圣杯10，我与他能否复合"
     //获取
