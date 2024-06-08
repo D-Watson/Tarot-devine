@@ -12,7 +12,8 @@ Page({
     nowPosition: {},
     futurePosition: {},
     tarot_info: [],
-    tarot_random_idx: []
+    tarot_random_idx: [],
+    userQuestion:'',
   },
 
   handelClicks:function(e){
@@ -128,9 +129,9 @@ Page({
       move: moves,
       haveOnePick: false,
       firstClick: firstClick,
-      tarot_random_idx: this.generateRandomNumbers(0, 111, 15)
+      tarot_random_idx: this.generateRandomNumbers(0, 111, 15),
+      userQuestion: options.question
     });
-    console.log(this.data.tarot_random_idx)
   },
 
   initialTarotInfo:function(){
@@ -482,13 +483,16 @@ Page({
     const now = data.tarot_info[data.tarot_random_idx[data.pickedIdx[1]]].name
     const future = data.tarot_info[data.tarot_random_idx[data.pickedIdx[2]]].name
     console.log(`now is ${now}, past = ${past}, future=${future}`)
-    console.log(this.devine(past, now, future, "能复合吗"))
+    console.log(this.devine(past, now, future, this.data.userQuestion))
   },
 
   devine:function(past, now, future ,question){
     const pastQuestion = `${past}, 我的问题是${question}`
     const nowQuestion = `${now}, 我的问题是${question}`
     const futureQuestion = `${future}, 我的问题是${question}`
+    wx.showLoading({
+      title: '预测中~',
+    })
     //获取
     wx.request({
       url: 'https://api.moonshot.cn/v1/chat/completions', 
@@ -512,6 +516,9 @@ Page({
       },
       success (res) {
         console.log(res)
+      },
+      complete(){
+        wx.hideLoading()
       }
     })
   },

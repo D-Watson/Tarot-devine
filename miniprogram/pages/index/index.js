@@ -49,7 +49,7 @@ Page({
       return
     }
     wx.navigateTo({
-      url: '/pages/devine/devine',
+      url: `/pages/devine/devine?question=${this.data.userQuestion}`,
     })
   },
   /**
