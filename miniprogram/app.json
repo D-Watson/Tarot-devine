@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/customize/customize",
     "pages/mine/mine",
-    "pages/devine/devine"
+    "pages/devine/devine",
+    "pages/result/result"
   ],
   "window": {
     "backgroundColor": "#fbc2eb",

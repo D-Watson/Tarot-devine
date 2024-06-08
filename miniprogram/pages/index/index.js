@@ -40,7 +40,14 @@ Page({
     })
   },
   answerQuestion:function(){
-    
+    if(this.data.userQuestion === ''){
+      wx.showToast({
+        title: '你的困惑和疑问呐？',
+        icon: 'none',
+        duration: 2000
+      });      
+      return
+    }
     wx.navigateTo({
       url: '/pages/devine/devine',
     })
