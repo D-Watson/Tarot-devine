@@ -519,6 +519,9 @@ Page({
       },
       complete(){
         wx.hideLoading()
+        wx.navigateTo({
+          url: `/pages/result/result?answer=${this.data.answer}&question=${this.data.userQuestion}`,
+        })
       }
     })
   },
