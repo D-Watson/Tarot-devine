@@ -1,2 +1,8 @@
-<!--pages/result/result.wxml-->
-<text>pages/result/result.wxml</text>
+<view class="result">
+  <view>
+    
+  </view>
+  <view>
+    {{answer}}
+  </view>
+</view>

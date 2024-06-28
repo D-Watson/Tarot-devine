@@ -13,7 +13,7 @@
   align-items: center;
   margin-left: 115rpx;
   position: fixed;
-  top: 300px;
+  top: 400px;
   left: 20px;
 }
 

@@ -14,28 +14,7 @@
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "/images/tabbar/index.png",
-        "selectedIconPath": "/images/tabbar/index_s.png"
-      },
-      {
-        "pagePath": "pages/customize/customize",
-        "text": "自选牌阵",
-        "iconPath": "/images/tabbar/seen.png",
-        "selectedIconPath": "/images/tabbar/seen_s.png"
-      },
-      {
-        "pagePath": "pages/mine/mine",
-        "text": "个人中心",
-        "iconPath": "/images/tabbar/personal.png",
-        "selectedIconPath": "/images/tabbar/personal_s.png"
-      }
-    ]
-  },
+  
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "lazyCodeLoading": "requiredComponents",

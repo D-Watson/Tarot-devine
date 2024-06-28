@@ -505,11 +505,13 @@ Page({
       success (res) {
         console.log(res.data.choices)
         req.answer = res.data.choices[0].message.content;
+        console.log(req)
       },
       complete(){
         wx.hideLoading()
+        let request = JSON.stringify(req);
         wx.navigateTo({
-          url: `/pages/result/result?req=${req}`,
+          url: `/pages/result/result?req=${request}`,
         })
       }
     })
