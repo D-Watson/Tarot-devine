@@ -464,13 +464,20 @@ Page({
     const now = data.tarot_info[data.tarot_random_idx[data.pickedIdx[1]]].name
     const future = data.tarot_info[data.tarot_random_idx[data.pickedIdx[2]]].name
     console.log(`now is ${now}, past = ${past}, future=${future}`)
-    console.log(this.devine(past, now, future, this.data.userQuestion))
+    this.devine(past, now, future, this.data.userQuestion)
   },
 
   devine:function(past, now, future ,question){
     const pastQuestion = `${past}, 我的问题是${question}`
     const nowQuestion = `${now}, 我的问题是${question}`
     const futureQuestion = `${future}, 我的问题是${question}`
+    let req = {
+      'past': past,
+      now: now,
+      future: future,
+      question: question,
+      answer: ''
+    }
     wx.showLoading({
       title: '预测中~',
     })
@@ -483,7 +490,7 @@ Page({
         "messages": [
             {
                 "role": "system",
-                "content": `你要扮演塔罗牌占卜师，不许出现塔罗牌没有科学依据这样的解释，请根据每张牌含义，要让用户信服你的说辞和分析,字数不要超过300字。`
+                "content": `你要扮演塔罗牌占卜师，不许出现塔罗牌没有科学依据这样的解释，请根据每张牌含义回答我，要让用户信服你的说辞和分析,字数不要超过300字。`
             },
             { "role": "user", "content": `${pastQuestion},请根据牌面和问题回答我过去的状态` },
             { "role": "user", "content": `${nowQuestion},请根据牌面和问题回答我当前的状态` },
@@ -496,12 +503,13 @@ Page({
         "authorization":"Bearer sk-FAUulmfXZSTOzem6R15DG4F8fXzcz0lOjcTLzNlEI6YSB20L"
       },
       success (res) {
-        console.log(res)
+        console.log(res.data.choices)
+        req.answer = res.data.choices[0].message.content;
       },
       complete(){
         wx.hideLoading()
         wx.navigateTo({
-          url: `/pages/result/result?answer=${this.data.answer}&question=${this.data.userQuestion}`,
+          url: `/pages/result/result?req=${req}`,
         })
       }
     })
