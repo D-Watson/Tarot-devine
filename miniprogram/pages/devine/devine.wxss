@@ -13,39 +13,38 @@
   align-items: center;
   margin-left: 115rpx;
   position: fixed;
-  top: 65%;
-  left: 5%;
+  top: 300px;
+  left: 20px;
 }
-@keyframes moveTop{
-  from{
-    top: 65%;
-  }
-  to{
-    top: 0%;
-  }
-}
+
 .before{
+  position: absolute;
   width: 150rpx;
   height: 300rpx;
-  margin-top: 120rpx;
   border: 1px solid black;
   display: flex;
+  top:20px;
+  left:20px;
   justify-content: center;
   align-items: center;
 }
 .now{
   width: 150rpx;
   height: 300rpx;
-  margin-top: 80rpx;
+  position: absolute;
   border: 1px solid black;
   display: flex;
+  top:20px;
+  left: 130px;
   justify-content: center;
   align-items: center;
 }
 .future{
   width: 150rpx;
   height: 300rpx;
-  margin-top: 120rpx;
+  position: absolute;
+  top: 20px;
+  left: 240px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -53,9 +52,8 @@
 }
 .picked-cards{
   display: flex;
-  margin: 0 40rpx;
   justify-content: space-between;
-
+  position: relative;
 }
 .glowing-button {
   margin-top: 25rpx;
@@ -71,7 +69,7 @@
   transition: 0.5s;
   cursor: pointer;
   margin-left: 12vw;
-  margin-top: 100rpx;
+  margin-top: 500rpx;
 }
  
 .glowing-button:hover {

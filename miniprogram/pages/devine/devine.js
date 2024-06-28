@@ -8,9 +8,18 @@ Page({
     cardStyles: [],
     move: [],
     pickedIdx: [],
-    beforePosition: {},
-    nowPosition: {},
-    futurePosition: {},
+    beforePosition: {
+      "top": 20,
+      "left": 20
+    },
+    nowPosition: {
+      "top": 20,
+      "left": 130
+    },
+    futurePosition: {
+      "top": 20,
+      "left": 240
+    },
     tarot_info: [],
     tarot_random_idx: [],
     userQuestion:'',
@@ -42,10 +51,9 @@ Page({
     var that = this; // 保存当前上下文
     var query = wx.createSelectorQuery();
     query.selectAll('.card-' + id).boundingClientRect((rect) => {
-      var left = rect[0].left;
       let m = wx.createAnimation({ duration: 200 });
-      m.translateY(position.top - rect[0].top).step();
-      m.translateX(position.left - rect[0].left).step();
+      m.translateY(position.top- rect[0].top).step();
+      m.translateX(position.left- rect[0].left).step();
       var moving = that.data.move;
       moving[id] = m.export();
       var pickedIdx = that.data.pickedIdx;
@@ -58,30 +66,6 @@ Page({
     });
     query.exec();
   },
-  getBeforePosition:function(){
-    var query = wx.createSelectorQuery();
-    query.selectAll(".before").boundingClientRect((rect) => {
-      this.setData({
-        beforePosition: rect[0]
-      })
-    }).exec();
-  },
-  getNowPosition:function(){
-    var query = wx.createSelectorQuery();
-    query.selectAll(".now").boundingClientRect((rect) => {
-      this.setData({
-        nowPosition: rect[0]
-      })
-    }).exec();
-  },
-  getFuturePosition:function(){
-    var query = wx.createSelectorQuery();
-    query.selectAll(".future").boundingClientRect((rect) => {
-      this.setData({
-        futurePosition: rect[0]
-      })
-    }).exec();
-  },
   getCardStyle:function(index){
     const rotationAngle = (index-5)*3.6; // 递增角度
     const style = {
@@ -91,7 +75,7 @@ Page({
       'background-image': 'url("https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/3db0fc0d93a91304ae0e9159bfeba0b7.png")',
       'background-size': `cover`,
       'background-position': `center`,
-      transform: `rotate(${rotationAngle}deg)`,
+      // transform: `rotate(${rotationAngle}deg)`,
       'transition': `all 3s ease`,
     };
     return Object.keys(style).map(key => `${key}: ${style[key]};`).join(' ');
@@ -109,9 +93,6 @@ Page({
    */
   
   onLoad(options) {
-    this.getBeforePosition();
-    this.getNowPosition();
-    this.getFuturePosition();
     var items = []
     var moves = []
     var firstClick = []
