@@ -1,7 +1,7 @@
 .setting-page{
   width:100%;
   background-size: cover;
-  background-image: url("https://p5.itc.cn/q_70/images03/20210919/1c90a884dad34c30a5652bdf562883a9.gif");
+  /* background-image: url("https://p5.itc.cn/q_70/images03/20210919/1c90a884dad34c30a5652bdf562883a9.gif"); */
   background-repeat:no-repeat; 
   position: absolute;
 }
