@@ -117,362 +117,362 @@ Page({
 
   initialTarotInfo:function(){
     this.setData({
-      tarot_info:[ {
-        "name" : "圣杯七",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B8%83.jpg"
+      tarot_info: [ {
+        "name" : "圣杯七.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B8%83.jpg"
       }, {
-        "name" : "圣杯七逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯七逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯三",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B8%89.jpg"
+        "name" : "圣杯三.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B8%89.jpg"
       }, {
-        "name" : "圣杯三逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯三逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯九",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B9%9D.jpg"
+        "name" : "圣杯九.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B9%9D.jpg"
       }, {
-        "name" : "圣杯九逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯九逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯二",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BA%8C.jpg"
+        "name" : "圣杯二.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BA%8C.jpg"
       }, {
-        "name" : "圣杯二逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯二逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯五",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BA%94.jpg"
+        "name" : "圣杯五.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BA%94.jpg"
       }, {
-        "name" : "圣杯五逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯五逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯侍从",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BE%8D%E4%BB%8E.jpg"
+        "name" : "圣杯侍从.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BE%8D%E4%BB%8E.jpg"
       }, {
-        "name" : "圣杯侍从逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯侍从逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯八",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%85%AB.jpg"
+        "name" : "圣杯八.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%85%AB.jpg"
       }, {
-        "name" : "圣杯八逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯八逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯六",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%85%AD.jpg"
+        "name" : "圣杯六.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%85%AD.jpg"
       }, {
-        "name" : "圣杯六逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯六逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯十",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%8D%81.jpg"
+        "name" : "圣杯十.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%8D%81.jpg"
       }, {
-        "name" : "圣杯十逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯十逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯四",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%9B%9B.jpg"
+        "name" : "圣杯四.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%9B%9B.jpg"
       }, {
-        "name" : "圣杯四逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯四逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯国王",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%9B%BD%E7%8E%8B.jpg"
+        "name" : "圣杯国王.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%9B%BD%E7%8E%8B.jpg"
       }, {
-        "name" : "圣杯国王逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯国王逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯皇后",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E7%9A%87%E5%90%8E.jpg"
+        "name" : "圣杯皇后.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E7%9A%87%E5%90%8E.jpg"
       }, {
-        "name" : "圣杯皇后逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯皇后逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯首牌",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E9%A6%96%E7%89%8C.jpg"
+        "name" : "圣杯首牌.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E9%A6%96%E7%89%8C.jpg"
       }, {
-        "name" : "圣杯首牌逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯首牌逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "圣杯骑士",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E9%AA%91%E5%A3%AB.jpg"
+        "name" : "圣杯骑士.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E9%AA%91%E5%A3%AB.jpg"
       }, {
-        "name" : "圣杯骑士逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%9C%A3%E6%9D%AF%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "圣杯骑士逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%9C%A3%E6%9D%AF%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑七",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B8%83.jpg"
+        "name" : "宝剑七.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B8%83.jpg"
       }, {
-        "name" : "宝剑七逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑七逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑三",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B8%89.jpg"
+        "name" : "宝剑三.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B8%89.jpg"
       }, {
-        "name" : "宝剑三逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑三逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑九",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B9%9D.jpg"
+        "name" : "宝剑九.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B9%9D.jpg"
       }, {
-        "name" : "宝剑九逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑九逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑二",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BA%8C.jpg"
+        "name" : "宝剑二.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BA%8C.jpg"
       }, {
-        "name" : "宝剑二逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑二逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑五",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BA%94.jpg"
+        "name" : "宝剑五.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BA%94.jpg"
       }, {
-        "name" : "宝剑五逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑五逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑侍从",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BE%8D%E4%BB%8E.jpg"
+        "name" : "宝剑侍从.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BE%8D%E4%BB%8E.jpg"
       }, {
-        "name" : "宝剑侍从逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑侍从逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑八",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%85%AB.jpg"
+        "name" : "宝剑八.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%85%AB.jpg"
       }, {
-        "name" : "宝剑八逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑八逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑六",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%85%AD.jpg"
+        "name" : "宝剑六.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%85%AD.jpg"
       }, {
-        "name" : "宝剑六逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑六逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑十",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%8D%81.jpg"
+        "name" : "宝剑十.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%8D%81.jpg"
       }, {
-        "name" : "宝剑十逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑十逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑四",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%9B%9B.jpg"
+        "name" : "宝剑四.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%9B%9B.jpg"
       }, {
-        "name" : "宝剑四逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑四逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑国王",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%9B%BD%E7%8E%8B.jpg"
+        "name" : "宝剑国王.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%9B%BD%E7%8E%8B.jpg"
       }, {
-        "name" : "宝剑国王逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑国王逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑皇后",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E7%9A%87%E5%90%8E.jpg"
+        "name" : "宝剑皇后.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E7%9A%87%E5%90%8E.jpg"
       }, {
-        "name" : "宝剑皇后逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑皇后逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑首牌",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E9%A6%96%E7%89%8C.jpg"
+        "name" : "宝剑首牌.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E9%A6%96%E7%89%8C.jpg"
       }, {
-        "name" : "宝剑首牌逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑首牌逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "宝剑骑士",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E9%AA%91%E5%A3%AB.jpg"
+        "name" : "宝剑骑士.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E9%AA%91%E5%A3%AB.jpg"
       }, {
-        "name" : "宝剑骑士逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E5%AE%9D%E5%89%91%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "宝剑骑士逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E5%AE%9D%E5%89%91%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币七",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B8%83.jpg"
+        "name" : "星币七.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B8%83.jpg"
       }, {
-        "name" : "星币七逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币七逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币三",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B8%89.jpg"
+        "name" : "星币三.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B8%89.jpg"
       }, {
-        "name" : "星币三逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币三逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币九",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B9%9D.jpg"
+        "name" : "星币九.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B9%9D.jpg"
       }, {
-        "name" : "星币九逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币九逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币二",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BA%8C.jpg"
+        "name" : "星币二.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BA%8C.jpg"
       }, {
-        "name" : "星币二逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币二逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币五",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BA%94.jpg"
+        "name" : "星币五.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BA%94.jpg"
       }, {
-        "name" : "星币五逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币五逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币侍从",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BE%8D%E4%BB%8E.jpg"
+        "name" : "星币侍从.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BE%8D%E4%BB%8E.jpg"
       }, {
-        "name" : "星币侍从逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币侍从逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币八",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%85%AB.jpg"
+        "name" : "星币八.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%85%AB.jpg"
       }, {
-        "name" : "星币八逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币八逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币六",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%85%AD.jpg"
+        "name" : "星币六.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%85%AD.jpg"
       }, {
-        "name" : "星币六逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币六逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币十",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%8D%81.jpg"
+        "name" : "星币十.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%8D%81.jpg"
       }, {
-        "name" : "星币十逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币十逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币四",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%9B%9B.jpg"
+        "name" : "星币四.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%9B%9B.jpg"
       }, {
-        "name" : "星币四逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币四逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币国王",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%9B%BD%E7%8E%8B.jpg"
+        "name" : "星币国王.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%9B%BD%E7%8E%8B.jpg"
       }, {
-        "name" : "星币国王逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币国王逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币皇后",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E7%9A%87%E5%90%8E.jpg"
+        "name" : "星币皇后.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E7%9A%87%E5%90%8E.jpg"
       }, {
-        "name" : "星币皇后逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币皇后逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币首牌",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E9%A6%96%E7%89%8C.jpg"
+        "name" : "星币首牌.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E9%A6%96%E7%89%8C.jpg"
       }, {
-        "name" : "星币首牌逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币首牌逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "星币骑士",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E9%AA%91%E5%A3%AB.jpg"
+        "name" : "星币骑士.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E9%AA%91%E5%A3%AB.jpg"
       }, {
-        "name" : "星币骑士逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%98%9F%E5%B8%81%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "星币骑士逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%98%9F%E5%B8%81%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖七",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B8%83.jpg"
+        "name" : "权杖七.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B8%83.jpg"
       }, {
-        "name" : "权杖七逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖七逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B8%83%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖三",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B8%89.jpg"
+        "name" : "权杖三.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B8%89.jpg"
       }, {
-        "name" : "权杖三逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖三逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B8%89%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖九",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B9%9D.jpg"
+        "name" : "权杖九.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B9%9D.jpg"
       }, {
-        "name" : "权杖九逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖九逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%B9%9D%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖二",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BA%8C.jpg"
+        "name" : "权杖二.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BA%8C.jpg"
       }, {
-        "name" : "权杖二逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖二逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BA%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖五",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BA%94.jpg"
+        "name" : "权杖五.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BA%94.jpg"
       }, {
-        "name" : "权杖五逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖五逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BA%94%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖侍从",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BE%8D%E4%BB%8E.jpg"
+        "name" : "权杖侍从.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BE%8D%E4%BB%8E.jpg"
       }, {
-        "name" : "权杖侍从逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖侍从逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E4%BE%8D%E4%BB%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖八",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%85%AB.jpg"
+        "name" : "权杖八.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%85%AB.jpg"
       }, {
-        "name" : "权杖八逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖八逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%85%AB%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖六",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%85%AD.jpg"
+        "name" : "权杖六.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%85%AD.jpg"
       }, {
-        "name" : "权杖六逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖六逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%85%AD%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖十",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%8D%81.jpg"
+        "name" : "权杖十.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%8D%81.jpg"
       }, {
-        "name" : "权杖十逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖十逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%8D%81%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖四",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%9B%9B.jpg"
+        "name" : "权杖四.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%9B%9B.jpg"
       }, {
-        "name" : "权杖四逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖四逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%9B%9B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖国王",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%9B%BD%E7%8E%8B.jpg"
+        "name" : "权杖国王.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%9B%BD%E7%8E%8B.jpg"
       }, {
-        "name" : "权杖国王逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖国王逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E5%9B%BD%E7%8E%8B%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖皇后",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E7%9A%87%E5%90%8E.jpg"
+        "name" : "权杖皇后.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E7%9A%87%E5%90%8E.jpg"
       }, {
-        "name" : "权杖皇后逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖皇后逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E7%9A%87%E5%90%8E%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖首牌",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E9%A6%96%E7%89%8C.jpg"
+        "name" : "权杖首牌.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E9%A6%96%E7%89%8C.jpg"
       }, {
-        "name" : "权杖首牌逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖首牌逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E9%A6%96%E7%89%8C%E9%80%86%E4%BD%8D.jpg"
       }, {
-        "name" : "权杖骑士",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E9%AA%91%E5%A3%AB.jpg"
+        "name" : "权杖骑士.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E9%AA%91%E5%A3%AB.jpg"
       }, {
-        "name" : "权杖骑士逆位",
-        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/%E6%9D%83%E6%9D%96%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
+        "name" : "权杖骑士逆位.jpg",
+        "url" : "https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/tarot/%E6%9D%83%E6%9D%96%E9%AA%91%E5%A3%AB%E9%80%86%E4%BD%8D.jpg"
       } ]
+      
     })
   },
 
   answerQuestion:function(){
     const data = this.data
     console.log(`-------${data.tarot_random_idx[data.pickedIdx[0]]}`)
-    const past = data.tarot_info[data.tarot_random_idx[data.pickedIdx[0]]].name
-    const now = data.tarot_info[data.tarot_random_idx[data.pickedIdx[1]]].name
-    const future = data.tarot_info[data.tarot_random_idx[data.pickedIdx[2]]].name
+    const past = data.tarot_info[data.tarot_random_idx[data.pickedIdx[0]]]
+    const now = data.tarot_info[data.tarot_random_idx[data.pickedIdx[1]]]
+    const future = data.tarot_info[data.tarot_random_idx[data.pickedIdx[2]]]
     console.log(`now is ${now}, past = ${past}, future=${future}`)
-    this.devine(past, now, future, this.data.userQuestion)
+    this.devine(past, now, future,this.data.userQuestion)
   },
-
-  devine:function(past, now, future ,question){
-    const pastQuestion = `${past}, 我的问题是${question}`
-    const nowQuestion = `${now}, 我的问题是${question}`
-    const futureQuestion = `${future}, 我的问题是${question}`
+  devine:function(past, now, future,question){
+    const pastQuestion = `${past.name}, 我的问题是${question}`
+    const nowQuestion = `${now.name}, 我的问题是${question}`
+    const futureQuestion = `${future.name}, 我的问题是${question}`
     let req = {
-      'past': past,
+      past: past,
       now: now,
       future: future,
       question: question,

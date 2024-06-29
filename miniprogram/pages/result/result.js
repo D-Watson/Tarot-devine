@@ -1,11 +1,40 @@
 // pages/result/result.js
+const DEFAULT_PAGE = 0;
 Page({
 
   /**
    * 页面的初始数据
    */
+  startX:0,
+  currentView: DEFAULT_PAGE,
   data: {
-    answer: ''
+    answer: '',
+    past:{},
+    now:{},
+    future:{},
+    currentIndex: 0,
+    imgList:[],
+    colorList:['black', 'green', 'red'],
+    toView: `card_${DEFAULT_PAGE}`,
+  },
+  onTouchStart(e) {
+    console.log(e.changedTouches[0].pageX);
+    this.startX = e.changedTouches[0].pageX;
+  },
+
+  onTouchMove(e) {
+    const moveX = e.changedTouches[0].pageX - this.startX;
+    const maxPage = this.data.imgList.length - 1;
+    if (Math.abs(moveX) >= 150){
+      if (moveX > 0) {
+        this.currentView = this.currentView !== 0 ? this.currentView - 1 : 0;
+      } else {
+        this.currentView = this.currentView !== maxPage ? this.currentView + 1 : maxPage;
+      }
+    }
+    this.setData({
+      toView: `card_${this.currentView}`
+    });
   },
 
   /**
@@ -14,8 +43,13 @@ Page({
   onLoad(options) {
     let req = JSON.parse(options.req)
     console.log(req)
+
     this.setData({
-      answer: req.answer
+      answer: req.answer,
+      past: req.past,
+      now: req.now,
+      future: req.future,
+      imgList: [req.past.url, req.now.url, req.future.url]
     })
   },
 

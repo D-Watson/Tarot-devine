@@ -1,4 +1,4 @@
-// app.js
+// import OSS from 'ali-oss';
 App({
   onLaunch: function () {
     if (!wx.cloud) {
@@ -15,5 +15,17 @@ App({
     }
 
     this.globalData = {};
-  }
+  },
+  // initOSSClient() {
+  //   this.ossClient = new OSS({
+  //     region: 'oss-cn-beijing', // 替换成你的 OSS 区域
+  //     accessKeyId: 'LTAI5t9FtTQ8siB1vZXnTYc8', // 替换成你的 AccessKeyId
+  //     accessKeySecret: 'BfUB5BYLXqNiFxvOCKICQySiWF7LPH', 
+  //     bucket: 'pets-shop' // 替换成你的 Bucket 名称
+  //   })
+  // },
+
+  // getOSSClient() {
+  //   return this.ossClient
+  // }
 });
