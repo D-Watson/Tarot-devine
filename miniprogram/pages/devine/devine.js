@@ -460,11 +460,9 @@ Page({
 
   answerQuestion:function(){
     const data = this.data
-    console.log(`-------${data.tarot_random_idx[data.pickedIdx[0]]}`)
     const past = data.tarot_info[data.tarot_random_idx[data.pickedIdx[0]]]
     const now = data.tarot_info[data.tarot_random_idx[data.pickedIdx[1]]]
     const future = data.tarot_info[data.tarot_random_idx[data.pickedIdx[2]]]
-    console.log(`now is ${now}, past = ${past}, future=${future}`)
     this.devine(past, now, future,this.data.userQuestion)
   },
   devine:function(past, now, future,question){
