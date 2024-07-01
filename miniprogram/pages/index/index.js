@@ -20,7 +20,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log(this.userQuestion)
+    console.log(this.data.userQuestion)
     this.getSystemHeight();
   },
   getSystemHeight: function(){
@@ -40,6 +40,7 @@ Page({
     })
   },
   answerQuestion:function(){
+    console.log(this.data.userQuestion)
     if(this.data.userQuestion === ''){
       wx.showToast({
         title: '你的困惑和疑问呐？',
