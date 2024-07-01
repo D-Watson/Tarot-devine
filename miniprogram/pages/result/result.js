@@ -8,6 +8,7 @@ Page({
   startX:0,
   currentView: DEFAULT_PAGE,
   data: {
+    copyText:'',
     answer: '',
     past:{},
     now:{},
@@ -37,7 +38,23 @@ Page({
       toView: `card_${this.currentView}`
     });
   },
-
+  onTap(e) {
+    wx.setClipboardData({
+      data: e.currentTarget.dataset.copytext,
+      success: function () {
+        wx.showToast({
+          title: '已复制',
+          icon: 'none',
+          duration: 2000
+        })
+      }
+    })
+  },
+  backIndex(){
+    wx.navigateTo({
+      url: '/pages/index/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

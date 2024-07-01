@@ -76,3 +76,15 @@
   background-repeat:no-repeat; 
   background-image: url('https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/xinzhi.png');
 }
+.backIndex{
+  width: 150rpx;
+  height: 100rpx;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fa709a;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+}
