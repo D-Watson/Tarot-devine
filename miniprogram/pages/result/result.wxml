@@ -4,7 +4,17 @@
   bindtouchstart="onTouchStart"
   bindtouchend="onTouchMove">
     <view wx:for="{{imgList}}" wx:key="item" class="card-box" id="card_{{index}}">
-      <image src="{{imgList[index]}}" mode="aspectFit"></image>
+      <view class="card-group">
+        <image src="{{imgList[index]}}" mode="aspectFit"></image>
+        <view class="text-group">
+          <text>{{date[index]}}</text>
+          <view class="name">
+            <text>{{nameList[index]}}</text>
+          </view>
+          
+        </view>
+      </view>
+    
     </view>
   </scroll-view>
   <view class="text">

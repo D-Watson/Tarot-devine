@@ -13,8 +13,9 @@ Page({
     now:{},
     future:{},
     currentIndex: 0,
+    date:['过去','现在','将来'],
     imgList:[],
-    colorList:['black', 'green', 'red'],
+    nameList: [],
     toView: `card_${DEFAULT_PAGE}`,
   },
   onTouchStart(e) {
@@ -49,8 +50,17 @@ Page({
       past: req.past,
       now: req.now,
       future: req.future,
+      nameList: [this.getName(req.past.name), this.getName(req.now.name), this.getName(req.future.name)],
       imgList: [req.past.url, req.now.url, req.future.url]
     })
+  },
+  getName(name){
+    let str = name.split(".")
+    console.log(str[0])
+    if(str.length > 0){
+      return str[0]
+    }
+    return ""
   },
 
   /**
