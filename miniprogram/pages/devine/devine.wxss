@@ -1,11 +1,3 @@
-.setting-page{
-  width:100%;
-  height: 100%;
-  background-size: cover;
-  background-image: url("../../images/background.gif");
-  background-repeat:no-repeat; 
-  position: absolute;
-}
 .card-row{
   display: flex;
   /* 子元素会均匀地分布在容器内 */
@@ -16,9 +8,8 @@
   top: 400px;
   left: 20px;
 }
-
 .before{
-  position: absolute;
+  position: fixed;
   width: 150rpx;
   height: 300rpx;
   border: 1px solid black;
@@ -31,7 +22,7 @@
 .now{
   width: 150rpx;
   height: 300rpx;
-  position: absolute;
+  position: fixed;
   border: 1px solid black;
   display: flex;
   top:20px;
@@ -42,7 +33,7 @@
 .future{
   width: 150rpx;
   height: 300rpx;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 240px;
   border: 1px solid black;
@@ -68,7 +59,6 @@
   font-size: 37rpx;
   transition: 0.5s;
   cursor: pointer;
-  margin-left: 12vw;
   margin-top: 500rpx;
 }
  

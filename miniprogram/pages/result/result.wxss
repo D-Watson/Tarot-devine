@@ -1,13 +1,3 @@
-.result{
-  width:100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat:no-repeat; 
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .scroll-box{
   display: flex;
   align-items: center;
@@ -19,17 +9,20 @@
 
 .card-box{
   display: inline-block;
-  margin-left: 30rpx;
-  margin-right: 20rpx;
+  width: 100%;
 }
 .card-group{
   display: flex;
+  justify-content: center;
+}
+.card{
+  width: 40%;
 }
 .text-group{
   display: flex;
   flex-direction: column;
   width: 20%;
-  margin-left: -150rpx;
+  margin-left: 50rpx;
   align-items: center;
   justify-content: center;
   font-size: 50rpx;
@@ -38,17 +31,11 @@
 .name{
   font-size: 0.7em;
   margin-top: 75rpx;
-  margin-left: 45rpx;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   padding: 10rpx;
   border-radius: 20rpx;
 }
-/* #card_0{
-  margin-right: 30rpx;
-} */
-/* #card_1{
-  margin-right: 30rpx;
-} */
+
 .img{
   width: 100%;
   height: 100%;
