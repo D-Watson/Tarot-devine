@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/mine/mine",
     "pages/devine/devine",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/message/message"
   ],
   "window": {
     "backgroundColor": "#fbc2eb",
@@ -13,7 +14,22 @@
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },
-  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "牌阵",
+        "iconPath": "/images/icon/cards_unpick.png",
+        "selectedIconPath": "/images/icon/card_picked.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "占卜师🔮",
+        "iconPath": "/images/icon/ghosts-unpick.png",
+        "selectedIconPath": "/images/icon/ghosts-pacman.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "lazyCodeLoading": "requiredComponents",
