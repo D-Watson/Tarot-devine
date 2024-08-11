@@ -83,3 +83,20 @@
   color: #f6d365;
   -webkit-text-stroke: 1px #f6d365;
 }
+.maybe-ask{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.change-q{
+  margin-left: 40%;
+  font-size: 35rpx;
+  background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  -webkit-background-clip: text;/*将设置的背景颜色限制在文字中*/
+  -webkit-text-fill-color: transparent;/*给文字设置成透明*/
+  display: flex;
+}
+.change{
+  width: 50rpx;
+  height: 50rpx;
+}
