@@ -1,2 +1,10 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="message-page">
+  <view class="author-info">
+    <image class="avater" src="https://pets-shop.oss-cn-beijing.aliyuncs.com/1x1_%E8%90%9D%E8%8E%89.png" ></image>
+    <view class="detail">
+      <text>陶墨沫</text>
+      <text style="font-size: 20rpx;margin-top: 10rpx;">2,000连接者</text>
+    </view>
+    <view class="concern">+</view>
+  </view>
+</view>
