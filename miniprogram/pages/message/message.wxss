@@ -2,9 +2,11 @@
   width:100%;
   height: 100vh;
   background-image: url("https://pets-shop.oss-cn-beijing.aliyuncs.com/1x1_%E8%90%9D%E8%8E%89.png");
-  background-repeat: no-repeat; /* 垂直方向重复 */
+  background-repeat: repeat-y; /* 垂直方向重复 */
   background-size: cover; 
   display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 .author-info{
   width: 55%;
@@ -39,4 +41,40 @@
   justify-content: center;
   align-items: center;
   color: white;
+}
+.chat{
+  width: 100%;
+  height: auto;
+}
+.text{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150rpx;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question{
+  border: 1px solid #4D4D4D;
+  width: 70%;
+  height: 80rpx;
+  border-radius: 35rpx;
+  padding-left: 35rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.user-box{
+  height: 75rpx;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  right: 10rpx;
+  bottom: 200rpx;
+  color: white;
+  padding: 10rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
 }

@@ -7,4 +7,23 @@
     </view>
     <view class="concern">+</view>
   </view>
+
+  <!-- 占卜师🔮介绍 -->
+  <view class="deviner">
+      
+  </view>
+
+  <view class="chat">
+    <view wx:for="{{messageList}}">
+      <view class="ai-box" wx:if="item.author === 0">
+        {{ item.content }}
+      </view>
+      <view class="user-box" wx:if="item.author === 1">
+        {{ item.content }}
+      </view>
+    </view>
+  </view>
+  <view class="text">
+      <input class="question" type="text" placeholder="输入你的问题" />
+  </view>
 </view>
