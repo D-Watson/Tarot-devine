@@ -44,7 +44,13 @@
 }
 .chat{
   width: 100%;
-  height: auto;
+  height: 60%;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 150rpx;
+  max-height: 60%;
+  display: flex;
+  flex-direction: column;
 }
 .text{
   position: fixed;
@@ -55,10 +61,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .question{
   border: 1px solid #4D4D4D;
-  width: 70%;
+  width: 65%;
   height: 80rpx;
   border-radius: 35rpx;
   padding-left: 35rpx;
@@ -68,13 +76,57 @@
 .user-box{
   height: 75rpx;
   background-color: rgba(0,0,0,0.7);
-  position: fixed;
-  right: 10rpx;
-  bottom: 200rpx;
   color: white;
   padding: 10rpx 20rpx;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+.ai-box{
+  height: 75rpx;
+  background-color: rgb(161, 110, 32);
+  color: white;
+  max-width: 80%;
+  padding: 10rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+.ai{
+  width: 100%;
+  display: flex;
+}
+.user{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.send{
+  width: 75rpx;
+  height: 75rpx;
+  margin-left: 20rpx;
+}
+.deviner{
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20rpx;
+  color: white;
+  margin-bottom: 30rpx;
+}
+.summary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }

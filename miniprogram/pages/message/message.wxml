@@ -7,23 +7,31 @@
     </view>
     <view class="concern">+</view>
   </view>
-
-  <!-- 占卜师🔮介绍 -->
-  <view class="deviner">
-      
-  </view>
-
   <view class="chat">
+   <!-- 占卜师🔮介绍 -->
+    <view class="deviner">
+      <text class="summary">
+        🔮简介 热爱二次元的少女，心思缜密
+      </text>
+    </view>
     <view wx:for="{{messageList}}">
-      <view class="ai-box" wx:if="item.author === 0">
-        {{ item.content }}
+      <view class="user" wx:if="{{item.author === 1}}">
+        <view class="user-box" >
+          {{ item.content }}
+        </view>
       </view>
-      <view class="user-box" wx:if="item.author === 1">
-        {{ item.content }}
+      <view class="ai" wx:if="{{item.author === 0}}">
+        <view class="ai-box" >
+          {{ item.content }}
+        </view>
       </view>
     </view>
   </view>
   <view class="text">
-      <input class="question" type="text" placeholder="输入你的问题" />
+      <input class="question" type="text" bindinput="messageInput" 
+      value="{{message}}"
+      placeholder="输入你的问题" />
+      <image class="send" src="../../images/icon/send.png" bindtap="sendMessage">
+      </image>
   </view>
 </view>

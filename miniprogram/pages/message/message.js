@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-      messageList: []
+      messageList: [],
+      message: ''
+  },
+
+  messageInput(e){
+     this.setData({
+       message: e.detail.value
+     })
   },
 
   /**
@@ -14,30 +21,28 @@ Page({
   onLoad(options) {
     this.setData({
       messageList:[
-        {
-          author: 0, //0=ai, 1=本人
-          content: 'ssssssssss',
-          timestamp: 0,
-        } 
       ]
     })
   },
   // 发送消息
-  sendMessage(content){
-    let messageList = this.messageList;
+  sendMessage(){
+    let content = this.data.message;
+    let messageList = this.data.messageList;
     messageList.push({
       author: 1,
       content: content,
       timestamp: new Date().getTime()
     })
     this.setData({
-      messageList: messageList
+      messageList: messageList,
+      message: ''
     })
-
+    this.sendRequest(content)
   },
 
   // 请求kimi
   sendRequest(content){
+    let that = this
      //获取
      wx.request({
       url: 'https://api.moonshot.cn/v1/chat/completions', 
@@ -47,7 +52,7 @@ Page({
         "messages": [
             {
                 "role": "system",
-                "content": `你要扮演塔罗牌占卜师，不许出现塔罗牌没有科学依据这样的解释，请根据我的问题回答我，要让用户信服你的说辞和分析,字数不要超过300字。`
+                "content": `你要扮演塔罗牌占卜师，不许出现塔罗牌没有科学依据这样的解释，请根据我的问题回答我，要让用户信服你的说辞和分析,字数不要超过50字。`
             },
             { "role": "user", "content": `${content}` }
         ],
@@ -61,10 +66,18 @@ Page({
         console.log(res.data.choices)
         let answer = res.data.choices[0].message.content;
         console.log(answer)
-        
+        let list = that.data.messageList;
+        list.push({
+          author: 0,
+          content: answer,
+          timestamp: new Date().getTime()
+        });
+        that.setData({
+          messageList: list
+        })
       },
       complete(){
-        let request = JSON.stringify(req);
+        
       }
     })
   },
