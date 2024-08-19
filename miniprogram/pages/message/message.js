@@ -19,10 +19,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      messageList:[
-      ]
-    })
+    setTimeout(()=>{
+      this.setData({
+        messageList:[
+          {
+            author: 0,
+            content: '我是占卜师🔮陶墨沫，请向我提问～',
+            timestamp: new Date().getTime()
+          }
+        ]
+      })
+    }, 500);
   },
   // 发送消息
   sendMessage(){
@@ -92,7 +99,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
   },
 
   /**
