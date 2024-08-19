@@ -7,13 +7,13 @@
     </view>
     <view class="concern">+</view>
   </view>
-  <view class="chat">
    <!-- 占卜师🔮介绍 -->
-    <view class="deviner">
+   <view class="deviner">
       <text class="summary">
-        🔮简介 热爱二次元的少女，心思缜密
+        🔮简介 热爱二次元的女生，心思缜密，真实身份和年龄不详，喜欢倾听与解答，可以用神秘学知识帮人排忧解难。
       </text>
     </view>
+  <view class="chat">
     <view wx:for="{{messageList}}">
       <view class="user" wx:if="{{item.author === 1}}">
         <view class="user-box" >
