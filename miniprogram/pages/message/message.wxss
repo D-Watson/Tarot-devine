@@ -60,17 +60,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 .question{
   border: 1px solid #4D4D4D;
   width: 65%;
-  height: 80rpx;
+  height: 70rpx;
   border-radius: 35rpx;
   padding-left: 35rpx;
+  padding-top: 20rpx;
   color: white;
   font-size: 30rpx;
+  word-wrap: break-word;
 }
 .user-box{
   min-height: 75rpx;

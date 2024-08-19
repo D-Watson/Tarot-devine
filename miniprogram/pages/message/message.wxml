@@ -28,9 +28,9 @@
     </view>
   </view>
   <view class="text">
-      <input class="question" type="text" bindinput="messageInput" 
+      <textarea class="question" type="text" bindinput="messageInput" 
       value="{{message}}"
-      placeholder="输入你的问题" />
+      placeholder="输入你的问题" maxlength="100"></textarea>
       <image class="send" src="../../images/icon/send.png" bindtap="sendMessage">
       </image>
   </view>
