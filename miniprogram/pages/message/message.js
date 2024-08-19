@@ -34,6 +34,10 @@ Page({
   // 发送消息
   sendMessage(){
     let content = this.data.message;
+    if(content === ''){
+      console.log(content)
+      return
+    }
     let messageList = this.data.messageList;
     messageList.push({
       author: 1,
