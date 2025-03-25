@@ -6,10 +6,10 @@
   <view class="question-block">
     <view class="maybe-ask">
       <view class="title">你可能想问</view>
-      <view class="change-q">
+      <!-- <view class="change-q">
         <image class="change" src="../../images/icon/change.png"></image>
         <view>换一换</view>
-      </view>
+      </view> -->
     
     </view>
     <view class="question-list" wx:for="{{ questions }}" wx:key="index" bindtap="getUserQuestion" data-index="{{index}}">

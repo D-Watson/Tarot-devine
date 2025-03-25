@@ -10,33 +10,36 @@
 }
 .before{
   position: fixed;
-  width: 150rpx;
-  height: 300rpx;
-  border: 1px solid black;
+  width: 115rpx;
+  height: 215rpx;
+  border: 1px solid white;
+  color: white;
   display: flex;
-  top:20px;
-  left:20px;
+  top:40px;
+  left:25px;
   justify-content: center;
   align-items: center;
 }
 .now{
-  width: 150rpx;
-  height: 300rpx;
+  width: 115rpx;
+  height: 215rpx;
   position: fixed;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
   display: flex;
-  top:20px;
-  left: 130px;
+  top:40px;
+  left: 135px;
   justify-content: center;
   align-items: center;
 }
 .future{
-  width: 150rpx;
-  height: 300rpx;
+  width: 115rpx;
+  height: 215rpx;
   position: fixed;
-  top: 20px;
-  left: 240px;
-  border: 1px solid black;
+  color: white;
+  top: 40px;
+  left: 245px;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;

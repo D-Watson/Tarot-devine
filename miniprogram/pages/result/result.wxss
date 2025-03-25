@@ -51,17 +51,17 @@
   height: 100%;
 } */
 .text{
-  border: 1px solid black;
-  width: 80%;
+  border: 1px solid #ffffff;
+  width: 70%;
   height: 40%;
   overflow: auto;
   border-radius: 50rpx;
   font-size: 30rpx;
   user-select: all;
-  padding: 140rpx 60rpx;
+  padding: 100rpx 60rpx;
   background-size: cover;
   background-repeat:no-repeat; 
-  background-image: url('https://pets-shop.oss-cn-beijing.aliyuncs.com/tarot/xinzhi.png');
+  background-image: url('https://gitee.com/Anxiaozhuang/pic-storage/raw/master/2Am3JdVvYn.jpg');
 }
 .backIndex{
   width: 150rpx;
@@ -71,7 +71,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fa709a;
   font-size: 30rpx;
   margin-top: 50rpx;
 }
